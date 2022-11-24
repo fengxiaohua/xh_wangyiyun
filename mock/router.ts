@@ -2,7 +2,7 @@
  * @Author: fengxiaohua 472843286@qq.com
  * @Date: 2022-11-22 14:06:58
  * @LastEditors: fengxiaohua 472843286@qq.com
- * @LastEditTime: 2022-11-24 10:04:13
+ * @LastEditTime: 2022-11-24 16:40:16
  * @FilePath: /vite-vue3-ts/mock/router.ts
  * @Description: mock路由
  */

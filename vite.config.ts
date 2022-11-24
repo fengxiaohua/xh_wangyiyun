@@ -2,7 +2,7 @@
  * @Author: fengxiaohua 472843286@qq.com
  * @Date: 2022-11-02 17:50:34
  * @LastEditors: fengxiaohua 472843286@qq.com
- * @LastEditTime: 2022-11-24 13:24:29
+ * @LastEditTime: 2022-11-24 16:55:33
  * @FilePath: /vite-vue3-ts/vite.config.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -17,6 +17,9 @@ import { AntDesignVueResolver } from "unplugin-vue-components/resolvers"
 
 // 支持mock
 import { viteMockServe } from "vite-plugin-mock"
+
+// 打包配置文件
+import topLevelAwait from "vite-plugin-top-level-await"
 
 const modifyVars = getThemeVariables({ dark: false })
 
@@ -34,6 +37,12 @@ export default defineConfig({
       mockPath: "./mock/",
       supportTs: false, // 监听TS文件，这里要注意下js文件的话填false
       localEnabled: true, // 开发环境
+    }),
+    topLevelAwait({
+      // The export name of top-level await promise for each chunk module
+      promiseExportName: "__tla",
+      // The function to generate import names of top-level await promise in each chunk module
+      promiseImportName: (i) => `__tla_${i}`,
     }),
   ],
   css: {

@@ -7,7 +7,6 @@
     "strict": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
@@ -16,7 +15,7 @@
     "paths": {
       "/@/*": ["src/*"]
     },
-    "types": ["vite/client", "ant-design-vue/typings/global.d.ts", "node"]
+    "types": ["vite/client", "ant-design-vue/typings/global", "node"]
   },
   "include": [
     "src/**/*.ts",
