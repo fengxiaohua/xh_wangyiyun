@@ -1,0 +1,1 @@
+import{_ as s,o as l,c as n,__tla as _}from"./index.4f296a5c.js";let t,c=Promise.all([(()=>{try{return _}catch{}})()]).then(async()=>{const a={},r={class:""};function e(o,d){return l(),n("div",r,"\u53D1\u73B0\u97F3\u4E50")}t=s(a,[["render",e]])});export{c as __tla,t as default};

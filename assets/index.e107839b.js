@@ -1,0 +1,1 @@
+import{_ as s,o as l,c,__tla as n}from"./index.4f296a5c.js";let t,o=Promise.all([(()=>{try{return n}catch{}})()]).then(async()=>{const a={},e={class:""};function r(_,i){return l(),c("div",e,"love music")}t=s(a,[["render",r]])});export{o as __tla,t as default};
